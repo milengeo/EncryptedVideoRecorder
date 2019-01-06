@@ -1,0 +1,18 @@
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keep class org.** { *; }
+-keep class android.** { *; }
+-keep class com.google.** { *; }
+-keep class com.facebook.** { *; }
+
+
+# Needed by google-api-client
+-keepattributes Signature
+-keepattributes *Annotation*
+
+-dontwarn sun.misc.Unsafe
+-dontwarn android.support.**
+-dontwarn com.google.ads.**
