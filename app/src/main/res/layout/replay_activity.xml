@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/play_layout_top"
+    >
+
+    <SurfaceView
+        android:id="@+id/id_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        >
+    </SurfaceView>
+
+
+
+    <TextView
+        android:id="@+id/play_tevi_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:visibility="gone"
+        />
+
+
+
+    <!--control layout-->
+    <RelativeLayout  android:id="@+id/play_controls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+            <ImageButton
+                android:id="@+id/player_button_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_play_144"
+                android:visibility="gone"
+                android:layout_marginRight="11dp"
+                android:layout_centerInParent="true"
+                android:soundEffectsEnabled="false"
+                />
+
+            <ImageButton
+                android:id="@+id/player_button_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_pause_144"
+                android:layout_marginRight="11dp"
+                android:layout_centerInParent="true"
+                android:soundEffectsEnabled="false"
+                />
+
+
+            <!--bottom layout <<< -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="#88000000"
+                android:padding="1dp"
+                >
+
+                <TextView
+                    android:id="@+id/play_tevi_posi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="00:00"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    />
+
+                <SeekBar
+                    android:id="@+id/play_seekbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="32dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/play_tevi_dura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="00:00"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    />
+                <!--bottom layout >>> -->
+            </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

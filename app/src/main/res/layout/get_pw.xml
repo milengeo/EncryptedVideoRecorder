@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:minWidth="300dp"
+              >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:background="#000000"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="@string/please_enter_password" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        >
+        <TextView
+            android:id="@+id/get_pw_filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text=""/>
+        <CheckBox
+            android:id="@+id/get_pw_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:text="@string/hide"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/get_pw_text_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/get_pw_edit_pass"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        >
+
+        <Button style="@style/MyButton1"
+            android:id="@+id/get_pw_reuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="99dp"
+            android:layout_margin="4dp"
+            android:text="@string/reuse"
+            />
+
+        <Button style="@style/MyButton1"
+            android:id="@+id/get_pw_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="99dp"
+            android:layout_margin="4dp"
+            android:text="@string/cancel"
+            />
+
+        <Button style="@style/MyButton1"
+            android:id="@+id/get_pw_ok"
+            android:minWidth="99dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/ok"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

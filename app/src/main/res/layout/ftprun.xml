@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:background="#000000"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Upload to FTP" />
+    </LinearLayout>
+
+
+
+    // file
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:text="File: "
+            />
+        <TextView
+            android:id="@+id/ftprun_file"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+
+
+    // progress
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        >
+
+        <TextView
+            android:id="@+id/ftprun_sofar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="55dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textSize="14sp"
+            />
+
+        <SeekBar
+            android:id="@+id/ftprun_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="32dip"
+            android:layout_gravity="center_vertical"
+            android:thumb="@null"/>
+        />
+
+        <TextView
+            android:id="@+id/ftprun_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="55dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="11dp"
+        >
+        <Button
+            android:id="@+id/ftprun_cancel"
+            android:minWidth="99dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

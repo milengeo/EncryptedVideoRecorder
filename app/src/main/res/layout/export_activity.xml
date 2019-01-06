@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/play_layout_top"
+    android:background="#0000cc"
+    >
+
+    <SurfaceView
+        android:id="@+id/export_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </SurfaceView>
+
+    <TextView
+        android:id="@+id/export_tevi_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:visibility="gone"
+        />
+
+
+
+    <!--top layout-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#88000000"
+        android:padding="1dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/export_tevi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/export"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+
+
+    <!--bottom layout <<< -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#88000000"
+        android:padding="1dp"
+        >
+
+        <TextView
+            android:id="@+id/export_tevi_posi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            />
+
+        <SeekBar
+            android:id="@+id/export_seekbar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="32dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:thumb="@null"/>
+
+        <TextView
+            android:id="@+id/export_tevi_dura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            />
+        <!--bottom layout >>> -->
+    </LinearLayout>
+
+
+
+</RelativeLayout>
